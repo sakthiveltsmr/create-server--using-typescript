@@ -15,17 +15,17 @@ const server: Server = http.createServer(
 
     if (url === "/" && method === "GET") {
       result = "welcome to typescript server";
-      response.end(result);
+      // response.end(result);
     } else if (url === "/about" && method === "GET") {
       result = "About Page";
-      response.end(result);
+      // response.end(result);
     } else if (url === "/service" && method === "GET") {
       result = "Service Page";
-      response.end(result);
+      // response.end(result);
     } else {
       result = "404 Page Not Found";
-      response.end(result);
     }
+    response.end(result);
 
     // response.end(`<h3>Wellcome</h3>`);
   }
